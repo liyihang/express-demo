@@ -7,7 +7,7 @@ const ideaScheme = new scheme({
         type:String,
         required:true
     },
-    content:{
+    details:{
         type:String,
         required:true
     },
