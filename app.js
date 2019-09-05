@@ -1,11 +1,11 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
 const exphbs = require('express-handlebars');
-const flash = require('connect-flash')
-const session = require('express-session')
+const flash = require('connect-flash');
+const session = require('express-session');
 const mongo = require('mongoose');
 const bodyParser = require('body-parser');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 
 const app = express();
 // load router files
