@@ -6,11 +6,14 @@ const session = require('express-session');
 const mongo = require('mongoose');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const passport = require('passport')    
 
 const app = express();
 // load router files
 const ideas = require('./routes/ideas')
 const users = require('./routes/users')
+// passport config
+require('./config/passport')(passport)
 // connect to mongoose
 mongo.connect('mongodb://localhost/keep-ideas', { useNewUrlParser: true }).then(() => {
     console.log('mongodb connecting ……')
